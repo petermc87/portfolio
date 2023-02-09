@@ -3,6 +3,8 @@ import { useState } from 'react'
 export default function Header(){
 
     const [openHamburger, setOpenHamburger] = useState(false)
+    const [hamburgerInitializer, setHamburgerInitializer] = useState(false)
+
     return (
         <>
         <div className={styles.navigation}>
@@ -15,7 +17,10 @@ export default function Header(){
             </div>
             {!openHamburger
                 ?
-                <div onClick={()=>{setOpenHamburger(true)}}className={styles.hMenu}>
+                <div onClick={()=>{
+                    setOpenHamburger(true)
+                    setHamburgerInitializer(true)
+                    }}className={styles.hMenu}>
                     <div className={styles.lineOneHm}></div>
                     <div className={styles.lineTwoHm}></div>
                     <div className={styles.lineThreeHm}></div>
@@ -27,7 +32,7 @@ export default function Header(){
             }
 
         </div>
-        {openHamburger
+        {openHamburger && hamburgerInitializer
             ?
                 <div className={styles.hamburgerNav}>
                     <div className={styles.navItem}><h1>Home</h1></div>
@@ -35,13 +40,16 @@ export default function Header(){
                     <div className={styles.navItem}><h1>About</h1></div>
                     <div className={styles.navItem}><h1>Contact</h1></div>
                 </div>
-                    :
+         : !openHamburger && hamburgerInitializer ?
                 <div className={styles.hamburgerNavOut}>
                     <div className={styles.navItem}><h1>Home</h1></div>
                     <div className={styles.navItem}><h1>Resume</h1></div>
                     <div className={styles.navItem}><h1>About</h1></div>
                     <div className={styles.navItem}><h1>Contact</h1></div>
                 </div>
+
+                :
+                ''
         }
         </>
     )
