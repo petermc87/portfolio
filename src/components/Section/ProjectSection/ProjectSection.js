@@ -4,24 +4,8 @@ import styles from '../ProjectSection/ProjectSection.module.scss'
 export default function ProjectSection () {
   return (
     <div className={styles.projectSection}>
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      <br/>
+      <div className={styles.heading}><h4> ---- WORK</h4></div>
       <Project />
       <Project />
       <Project />

@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Ubuntu:wght@300&display=swap');
 
 :root {
+    --media-width: 960px;
     --blue: #4680fd;
     --bright-blue: #26b7ff;
     --red: #ff5b3e;
     --info-text: #6e6d6d;
     --outlines: #c5c5c5;
+    --light-outline: #e9e9e9;
     --roboto: 'Roboto', sans-serif;
     --ubuntu: 'Ubuntu', sans-serif;
+    --div-padding: 12vw;
+    --div-radius: 0.4rem;
+    --small-div-radius: 0.4rem;
+    --background-color: #f8f8f8;
+    background-color: var(--background-color)
   }
 
 h1{
     font-family: var(--roboto);
 }
+
+
 
 main{
     // border: solid blue;
