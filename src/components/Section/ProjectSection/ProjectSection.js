@@ -1,14 +1,26 @@
 import Project from '../../Project/Project'
 import styles from '../ProjectSection/ProjectSection.module.scss'
+import Gamescreen from '../../../images/PM-gamescreen.png'
+import Yum2me from '../../../images/yum2me.png'
+import Instafake from '../../../images/instafake.png'
 
 export default function ProjectSection () {
   return (
     <div className={styles.projectSection}>
       <br/>
       <div className={styles.heading}><h4> ---- WORK</h4></div>
-      <Project />
-      <Project />
-      <Project />
+      <Project 
+        image={Gamescreen}
+        title='Piranha Madness!'
+      />
+      <Project 
+        image={Yum2me}
+        title='Yum2me'
+      />
+      <Project 
+        image={Instafake}
+        title='Instafake'
+      />
     </div>
   )
 }
