@@ -3,10 +3,13 @@
         // border: solid orange;
         display: flex;
         justify-content: center;
-        max-width: 60rem;
+        max-width: 80rem;
         box-shadow: 0 3px 10px rgba(240, 240, 240, 0.2);
         border-radius: var(--div-radius);
         margin-bottom: 2rem;
+        animation: fade-in ease-in 0.5s forwards;
+        animation-delay: 1s;
+        opacity: 0;
     }
     .projectImage{
         // border: solid black;
@@ -44,7 +47,10 @@
         box-shadow: 0 3px 10px rgba(187, 187, 187, 0.2);
         border-radius: var(--small-div-radius);
         margin-bottom: 2rem;
+        animation:  fade-in ease-in 0.5s forwards;
+        animation-delay: 1s;
         // text-align: center;
+        opacity: 0;
     }
     .projectImage{
         // border: solid black;
@@ -94,11 +100,6 @@
 .projectDescription{
     padding: 1rem 2rem 2rem 2rem;
 }
-// .projectImage img{
-//     height: 100%;
-//     width: 100%;
-//     border-radius: var(--div-radius) 0 0 var(--div-radius);
-// }
 
 @keyframes hover {
     0%   { 
@@ -109,3 +110,14 @@
     opacity: 0.3;
     }
    }
+
+
+@keyframes fade-in {
+    0%   { 
+    opacity: 0; 	
+    }
+    100% { 
+        // transform: translateX(0%); 
+    opacity: 1;
+    }
+}
