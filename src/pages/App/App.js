@@ -1,14 +1,14 @@
 // import logo from './logo.svg';
 // import './App.css';
 import styles from '../App/App.module.scss'
-import Home  from '../Home/Home';
+import Home from '../Home/Home'
 
-function App() {
+function App () {
   return (
     <div className={styles.app}>
-      <Home/>
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
