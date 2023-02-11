@@ -12,14 +12,17 @@ export default function ProjectSection () {
       <Project 
         image={Gamescreen}
         title='Piranha Madness!'
+        url='https://petermc87.github.io/project_1_piranha_madness/'
       />
       <Project 
         image={Yum2me}
         title='Yum2me'
+        url='https://starfish-app-glmra.ondigitalocean.app/'
       />
       <Project 
         image={Instafake}
         title='Instafake'
+        url='https://instafake.herokuapp.com/'
       />
     </div>
   )

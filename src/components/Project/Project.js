@@ -1,6 +1,6 @@
 import styles from '../Project/Project.module.scss'
 // import GAMESCREEN from '../../../src/images/PM-gamescreen.png'
-export default function Project ({image, title}) {
+export default function Project ({image, title, url}) {
   return (
     <div className={styles.projectContainer}>
       {/* <h1>Project</h1> */}
@@ -15,7 +15,9 @@ optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
 obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
 nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,</p>
         </div>
-        <div className={styles.button}><h4>Launch App</h4></div>
+        <a href={url}>
+          <div className={styles.button}><h4>Launch App</h4></div>
+        </a>
         </div>
     </div>
   )

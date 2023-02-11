@@ -17,9 +17,12 @@ export default function Header () {
         <div className={styles.navSelector}>
           <h2>Home</h2>
         </div>
-        <div className={styles.navSelector}>
-          <h2>Resume</h2>
-        </div>
+       
+          <div className={styles.navSelector}>
+          <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+            <h2>Resume</h2>
+          </a>
+          </div>
         <div className={styles.navSelector}>
           <h2>About</h2>
         </div>
@@ -45,14 +48,18 @@ export default function Header () {
       {openHamburger && hamburgerInitializer
         ? <div className={styles.hamburgerNav}>
           <div className={styles.navItem}><h1>Home</h1></div>
-          <div className={styles.navItem}><h1>Resume</h1></div>
+          <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+            <div className={styles.navItem}><h1>Resume</h1></div>
+          </a>
           <div className={styles.navItem}><h1>About</h1></div>
           <div className={styles.navItem}><h1>Contact</h1></div>
         </div>
         : !openHamburger && hamburgerInitializer
             ? <div className={styles.hamburgerNavOut}>
               <div className={styles.navItem}><h1>Home</h1></div>
-              <div className={styles.navItem}><h1>Resume</h1></div>
+              <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+                <div className={styles.navItem}><h1>Resume</h1></div>
+              </a>
               <div className={styles.navItem}><h1>About</h1></div>
               <div className={styles.navItem}><h1>Contact</h1></div>
             </div>
