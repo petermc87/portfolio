@@ -2,4 +2,26 @@
     border: solid black;
     background-color: black;
     color: white ;
+    display: flex;
+    // border: solid gray;
+    padding: 8rem 5rem 8rem 5rem;
+    justify-content: space-around;
+}
+
+.mailIcon{
+    border: solid gray;
+}
+.linkedin:hover, .instagram:hover, .github:hover, .facebook:hover, .envelope:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.linkedin, .instagram, .github, .facebook, .envelope{
+    margin: 0.82rem;
+}
+
+a{
+    text-decoration: none;
+    // background-color: white;
+    color: white;
 }

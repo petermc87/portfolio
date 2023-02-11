@@ -8,21 +8,50 @@
 }
 
 .intro > h1{
-    font-size: 8rem;
+    // font-size: 8rem;
     font-weight: 900;
     animation: slide-up ease-in 0.5s;
 }
 
 .intro > p{
-    font-size: 2.5rem;
-    max-width:35rem;
-    line-height: 4rem;
+    // font-size: 2.5rem;
+    // max-width:35rem;
+    // line-height: 4rem;
     font-weight: 100;
     color: var(--info-text);
     animation: slide-right ease-in 0.5s forwards;
     animation-delay: 1s;
     opacity: 0;
 }
+
+@media only screen and (max-width: 1200px)  {
+    .intro > p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        max-width: 40rem;
+    }
+
+    .intro > h1{
+        font-size: 4rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px)  {
+    .intro > p{
+        font-size: 2.5rem;
+        max-width: 55rem;
+        line-height: 4rem;
+    }
+
+    .intro > h1{
+        font-size: 8rem;
+    }
+
+}
+
+
+
 
 
 span{

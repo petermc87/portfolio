@@ -8,8 +8,6 @@
     padding: 1rem 0 0.5rem 0;
     background-color: var(--background-color);
     z-index: +4;
-
-    // padding: 0 1rem 0 0;
 }
 
 @media only screen and (max-width: 1200px)  {
@@ -58,14 +56,12 @@
 .navSelector:hover{
     cursor: pointer;
      animation: hover ease-in 0.2s forwards;
-    // opacity: 0.4;
 }
 
 
 .hMenu:hover{
     cursor: pointer;
     animation: hover ease-in 0.2s forwards;
-    // opacity: 0.4;
 }
 
 
@@ -125,16 +121,18 @@
       border: solid grey;
       left: 4.5rem;
       top: 2.1;
-      height: 3.6rem;
+      height: 3.5rem;
       position: absolute;
        border-width:0.3rem;
-       border-radius: 3px 3px 0 0
+    //    border-radius: 3px 3px 0 0
     }
     
     .line, .lineTwo, .straightEnd{
         // color: var(--red);
         border: solid var(--red);
         opacity: 0.8;
+        border-width: 4px;
+        border-radius: 0.2px 0.2px 0 0;
     }
     
     .circle{
