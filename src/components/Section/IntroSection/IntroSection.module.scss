@@ -8,15 +8,15 @@
 }
 
 .intro > h1{
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: 900;
     animation: slide-up ease-in 0.5s;
 }
 
 .intro > p{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     max-width:35rem;
-    line-height: 3rem;
+    line-height: 4rem;
     font-weight: 100;
     color: var(--info-text);
     animation: slide-right ease-in 0.5s forwards;
