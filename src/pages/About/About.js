@@ -12,8 +12,9 @@ export default function About () {
             <br/>
             {/* <h1>About Page</h1>
              */}
-             <div className={styles.aboutMe}></div>
-             <Article/>
+             <div className={styles.aboutMe}>
+                <Article/>
+             </div>
         </>
     ) 
 }
