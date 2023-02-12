@@ -43,6 +43,11 @@ export default function CompetenciesSection () {
         skillTwo={git}
       />
     {/* </div> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import styles from '../Project/Project.module.scss'
-// import GAMESCREEN from '../../../src/images/PM-gamescreen.png'
+
 export default function Project ({image, title, url}) {
   return (
     <div className={styles.projectContainer}>

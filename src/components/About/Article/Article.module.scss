@@ -1,0 +1,24 @@
+.aboutSection{
+    // border: solid black;
+    display: flex;
+}
+
+.aboutSection p{
+    // border: solid green;
+    width: 150%;
+    // max-width: 60rem;
+    min-width: 10%;
+    padding: 1rem;
+}
+.imageContainer{
+    // border: solid red;
+    // width: 150rem;
+    // height: 15rem;
+    // width: 40%;
+}
+
+
+.imageContainer img{
+    // height: 100%;
+    width: 100%;
+}
