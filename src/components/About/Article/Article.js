@@ -28,7 +28,7 @@ modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
 totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
 quasi aliquam eligendi, placeat qui corporis!</p>
                 <div className={styles.imageContainer}>
-                    <img src={meandsaorla}/>
+                    <img src={meandsaorla} alt='meandsaorla'/>
                 </div>
             </div>
         </article>
