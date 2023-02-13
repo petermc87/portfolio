@@ -7,19 +7,19 @@ import Instafake from '../../../images/instafake.png'
 export default function ProjectSection () {
   return (
     <div className={styles.projectSection}>
-      <br/>
+      <br />
       <div className={styles.heading}><h4> ---- WORK</h4></div>
-      <Project 
+      <Project
         image={Gamescreen}
         title='Piranha Madness!'
         url='https://petermc87.github.io/project_1_piranha_madness/'
       />
-      <Project 
+      <Project
         image={Yum2me}
         title='Yum2me'
         url='https://starfish-app-glmra.ondigitalocean.app/'
       />
-      <Project 
+      <Project
         image={Instafake}
         title='Instafake'
         url='https://instafake.herokuapp.com/'

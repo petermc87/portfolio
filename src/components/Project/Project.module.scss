@@ -1,10 +1,8 @@
 @media only screen and (min-width: 960px)  {
     .projectContainer{
-        // border: solid orange;
         display: flex;
         justify-content: center;
         max-width: 80rem;
-        // box-shadow: 0 3px 10px rgba(240, 240, 240, 0.2);
         border-radius: var(--div-radius);
         margin-bottom: 2rem;
         animation: fade-in ease-in 0.5s forwards;
@@ -17,7 +15,6 @@
     }
     
     .projectDescription{
-        // border: solid blue;
         padding: 2vw;
         border-radius: 0 var(--div-radius) var(--div-radius) 0;
         background-color: rgb(255, 255, 255);
@@ -26,7 +23,6 @@
         justify-content: space-between;
         width: 50%;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        // width: 5rem;
     }
     .projectImage img{
         height: 100%;
@@ -45,27 +41,20 @@
         justify-content: center;
         flex-direction: column;
         max-width: 60rem;
-        // box-shadow: 0 3px 10px rgba(187, 187, 187, 0.2);
         border-radius: var(--small-div-radius);
         margin-bottom: 2rem;
         animation:  fade-in ease-in 0.5s forwards;
         animation-delay: 1s;
-        // text-align: center;
         opacity: 0;
     }
     .projectImage{
-        // border: solid black;
-        // padding: var(--div-padding);
         border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
-        // width: 40vw;
     }
     .projectImage img{
         height: 100%;
         width: 100%;
         border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
         box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1);
-        // filter:  brightness(83%) contrast(140%);
-        // object-fit: cover;
     }
     
     .projectDescription{
@@ -74,7 +63,6 @@
         border-radius: 0 0 var(--small-div-radius) var(--small-div-radius);
         background-color: rgb(255, 255, 255);
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        // width: 40%;
     }
 
 
@@ -93,7 +81,6 @@
 }
 
 .button:hover{
-    // opacity: 0.3;
     cursor: pointer;
     animation: hover ease-in 0.1s forwards;
 }
@@ -115,7 +102,6 @@
     opacity: 1; 	
     }
     100% { 
-    // transform: translateX(0%); 
     opacity: 0.3;
     }
    }
@@ -126,7 +112,6 @@
     opacity: 0; 	
     }
     100% { 
-        // transform: translateX(0%); 
     opacity: 1;
     }
 }

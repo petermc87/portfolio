@@ -2,7 +2,6 @@ import styles from '../CompetenciesSection/CompetenciesSection.module.scss'
 import Competency from '../../Competency/Competency'
 
 export default function CompetenciesSection () {
-
   const js = 'JavaScript'
   const html = 'HTML'
   const css = 'CSS'
@@ -19,35 +18,35 @@ export default function CompetenciesSection () {
 
   return (
     <div className={styles.competenciesWrapper}>
-  
-    <div className={styles.heading}><h4> ---- SKILLS</h4></div>
-    {/* <div className={styles.competenciesSection}> */}
+
+      <div className={styles.heading}><h4> ---- SKILLS</h4></div>
+      {/* <div className={styles.competenciesSection}> */}
       {/* <br/>
       <div className={styles.heading}><h4> ---- SKILLS</h4></div> */}
-      <Competency 
+      <Competency
         skillOne={js}
         skillTwo={html}
         skillThree={css}
       />
-      <Competency 
+      <Competency
         skillOne={react}
         skillTwo={sass}
       />
-      <Competency 
+      <Competency
         skillOne={mongoose}
         skillTwo={express}
         skillThree={node}
       />
-      <Competency 
+      <Competency
         skillOne={github}
         skillTwo={git}
       />
-    {/* </div> */}
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      {/* </div> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   )
 }
