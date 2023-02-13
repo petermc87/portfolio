@@ -1,13 +1,13 @@
-import meandsaorla from '../../../../src/images/merandsaorla.png'
+
 import styles from '../Article/Article.module.scss'
-export default function Article () {
+export default function Article ({heroimage, improvimage}) {
     return(
         <div className={styles.aboutContainer}>
             <h1>About Me</h1>
             <article>
                     <div className={styles.aboutContents}>
                                 <div className={styles.aboutContents__image}>
-                                    <img src={meandsaorla} alt='meandsaorla'/>
+                                    <img src={heroimage} alt='meandsaorla'/>
                                 </div>
                                 <div className={styles.aboutContents__text}>
                                     <h3>Proud Husband & Dad</h3>
@@ -30,7 +30,7 @@ export default function Article () {
             <article className={styles.otherAbout}>
                     <div className={styles.aboutContents}>
                         <div className={styles.aboutContents__image}>
-                            <img src={meandsaorla} alt='meandsaorla'/>
+                            <img src={improvimage} alt='meandsaorla'/>
                         </div>
                         <div className={styles.aboutContents__text}>
                             <h3>Musician & Improviser</h3>

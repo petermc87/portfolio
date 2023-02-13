@@ -1,6 +1,8 @@
 import Header from "../../components/Header/Header"
 import Article from "../../components/About/Article/Article"
 import styles from '../About/About.module.scss'
+import meandsaorla from '../../images/merandsaorla.png'
+import improv from '../../images/improv.jpeg'
 
 export default function About () {
     return(
@@ -10,10 +12,11 @@ export default function About () {
             <br/>
             <br/>
             <br/>
-            {/* <h1>About Page</h1>
-             */}
              <div className={styles.aboutMe}>
-                <Article/>
+                <Article
+                    heroimage={meandsaorla}
+                    improvimage={improv}
+                />
              </div>
         </>
     ) 

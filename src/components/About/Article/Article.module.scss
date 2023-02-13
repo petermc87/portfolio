@@ -35,6 +35,7 @@
     &__text p{
         display: inline;
         min-width: 25rem;
+        // white-space: nowrap;
         // border: solid purple;
         // padding: 15rem;
         // padding: 0;
@@ -42,13 +43,13 @@
         font-size: 1rem;
         color: var(--info-text);
         line-height: 1.5rem;
-        margin: 0.7rem;
+        // margin: 0.7rem;
         // margin: 0 auto;
     }
-    &__text h3{
-        margin: 0.5rem;
+    // &__text h3{
+    //     // margin: 0.5rem;
 
-    }
+    // }
 }
 
 
