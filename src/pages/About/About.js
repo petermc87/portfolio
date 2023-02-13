@@ -3,6 +3,7 @@ import Article from "../../components/About/Article/Article"
 import styles from '../About/About.module.scss'
 import meandsaorla from '../../images/merandsaorla.png'
 import improv from '../../images/improv.jpeg'
+import Footer from "../../components/Footer/Footer"
 
 export default function About () {
     return(
@@ -18,6 +19,7 @@ export default function About () {
                     improvimage={improv}
                 />
              </div>
+            <Footer />
         </>
     ) 
 }

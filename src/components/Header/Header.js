@@ -15,6 +15,11 @@ export default function Header () {
     navigate('/about')
   }
 
+  function sendEmail(){
+    window.location.assign("mailto:peter.mcgibney@gmail.com")
+  }
+  
+
   return (
     <>
       <div className={styles.navigation} >
@@ -36,7 +41,7 @@ export default function Header () {
         <div className={styles.navSelector} onClick={()=>{handleAboutNavigate()}}>
           <h2 >About</h2>
         </div>
-        <div className={styles.navSelector}>
+        <div className={styles.navSelector} onClick={()=>{sendEmail()}}>
           <h2>Contact</h2>
         </div>
         {!openHamburger
@@ -68,7 +73,7 @@ export default function Header () {
               handleAboutNavigate()
               setOpenHamburger(false)
             }}><h1>About</h1></div>
-          <div className={styles.navItem}><h1>Contact</h1></div>
+          <div className={styles.navItem} onClick={()=>{sendEmail()}}><h1>Contact</h1></div>
         </div>
         : !openHamburger && hamburgerInitializer
             ? <div className={styles.hamburgerNavOut}>
@@ -80,9 +85,8 @@ export default function Header () {
                 <div className={styles.navItem}><h1>Resume</h1></div>
               </a>
               <div className={styles.navItem} onClick={()=>{handleAboutNavigate()}}><h1>About</h1></div>
-              <div className={styles.navItem}><h1>Contact</h1></div>
+              <div className={styles.navItem} onClick={()=>{sendEmail()}}><h1 >Contact</h1></div>
             </div>
-
             : ''}
     </>
   )
