@@ -32,7 +32,7 @@ export default function Header () {
           <h2>Home</h2>
         </div>
         <div className={styles.navSelector}>
-          <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+          <a href='https://drive.google.com/file/d/1P-rJAngW4H6uVB8GTSPpEKDAICFV9YT4/view?usp=sharing'>
             <h2>Resume</h2>
           </a>
         </div>
@@ -67,7 +67,7 @@ export default function Header () {
             }}
           ><h1>Home</h1>
           </div>
-          <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+          <a href='https://drive.google.com/file/d/1P-rJAngW4H6uVB8GTSPpEKDAICFV9YT4/view?usp=sharing'>
             <div className={styles.navItem}><h1>Resume</h1></div>
           </a>
           <div
