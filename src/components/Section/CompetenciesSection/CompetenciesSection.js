@@ -19,7 +19,7 @@ export default function CompetenciesSection () {
   return (
     <div className={styles.competenciesWrapper}>
 
-      <div className={styles.heading}><h4> ---- SKILLS</h4></div>
+      <div className={styles.heading}><div className={styles.dash}></div><h4>SKILLS</h4></div>
       {/* <div className={styles.competenciesSection}> */}
       {/* <br/>
       <div className={styles.heading}><h4> ---- SKILLS</h4></div> */}

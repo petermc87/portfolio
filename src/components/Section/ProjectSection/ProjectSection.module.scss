@@ -24,6 +24,16 @@
     animation-delay: 1s;
     // text-align: center;
     opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.dash{
+    border: solid black;
+    width: 1rem;
+    border-width: 0.5px;
+    margin-right: 0.2rem;
 }
 
 @keyframes fade-in {
