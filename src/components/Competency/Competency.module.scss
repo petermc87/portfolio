@@ -1,31 +1,42 @@
 .competency{
     margin: 0.1rem;
-    max-width: 80rem;
-    box-shadow: 0 3px 10px rgb(240 240 240 / 20%);
+    // max-width: 80rem;
+    box-shadow: 0 5px 10px rgb(240 240 240 / 20%);
     border-radius: var(--div-radius);
     border-width: 0.5px;
-    width: 100%;
+    // width: 100%;
     text-align: left;
-    max-width: 80rem;
+    // max-width: 80rem;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    // justify-content: space-around;
     animation-delay: 1s;
     background-color: white;
     padding: 0.7rem;
     animation: fade-in ease-in 0.5s forwards;
     opacity: 0;
+    margin-bottom: 1rem;
     animation-delay: 1s;
+    color: var(--info-text);
+    h2{
+        margin: 0;
+        margin-bottom: 0.5rem;
+        color: black;
+    }
+    @media only screen and (min-width: 960px)  {
+        margin-bottom: 4rem;
+        margin-top: 2.5rem;
+    }
 }
 
-.skillContainer{
-    padding: 1rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    border-radius: var(--div-radius);
-    background-color: var(--red);
-    color: white;
-    animation: fade-in ease-in 0.5s forwards;
-    opacity: 0;
-    animation-delay: 1s;
+
+.skillsWrapper{
+    // border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        padding: 0 1rem 0 0;
+    }
 }
 
 

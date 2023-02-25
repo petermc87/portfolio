@@ -1,13 +1,12 @@
 import styles from '../Competency/Competency.module.scss'
 
-export default function Competency ({ skillOne, skillTwo, skillThree }) {
+export default function Competency ({ skills, title }) {
   return (
     <div className={styles.competency}>
-      <div className={styles.skillContainer}>{skillOne}</div>
-      <div className={styles.skillContainer}>{skillTwo}</div>
-      {skillThree
-        ? <div className={styles.skillContainer}>{skillThree}</div>
-        : ''}
+      <h2>{title}</h2>
+        <div className={styles.skillsWrapper}>
+          <div className={styles.skillContainer}>{skills}</div>
+          </div>
     </div>
   )
 }

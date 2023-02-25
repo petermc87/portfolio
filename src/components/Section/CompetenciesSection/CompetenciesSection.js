@@ -2,46 +2,33 @@ import styles from '../CompetenciesSection/CompetenciesSection.module.scss'
 import Competency from '../../Competency/Competency'
 
 export default function CompetenciesSection () {
-  const js = 'JavaScript'
-  const html = 'HTML'
-  const css = 'CSS'
-
-  const react = 'ReactJS'
-  const sass = 'SASS'
-
-  const mongoose = 'MongooseJS'
-  const express = 'ExpressJS'
-  const node = 'NodeJS'
-
-  const github = 'GitHub'
-  const git = 'Git'
-
   return (
     <div className={styles.competenciesWrapper}>
-
       <div className={styles.heading}><div className={styles.dash}></div><h4>SKILLS</h4></div>
-      {/* <div className={styles.competenciesSection}> */}
-      {/* <br/>
-      <div className={styles.heading}><h4> ---- SKILLS</h4></div> */}
+      <div className={styles.competenciesContainersWrapper}>
       <Competency
-        skillOne={js}
-        skillTwo={html}
-        skillThree={css}
+        title='Databases'
+        skills='MongoDB'
       />
       <Competency
-        skillOne={react}
-        skillTwo={sass}
+        title='Languages'
+        skills='JavaScript, HTML, CSS, SCSS, Python'
       />
       <Competency
-        skillOne={mongoose}
-        skillTwo={express}
-        skillThree={node}
+        title='Frameworks'
+        skills='React.js, Node.js, Express.js, Mongoose.js, Bootsrap'
+      />
+            <Competency
+        title='Software Development Tools'
+        skills='Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio'
       />
       <Competency
-        skillOne={github}
-        skillTwo={git}
+        title='Methodologies'
+        skills='Design Research, User Flows, MVC Architecture, Test-Driven Development, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Agile Development'
       />
-      {/* </div> */}
+
+
+      </div>
       <br />
       <br />
       <br />
