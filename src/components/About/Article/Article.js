@@ -45,7 +45,6 @@ export default function Article ({ heroimage, improvimage }) {
           </div>
         </div>
       </article>
-
     </div>
   )
 }
