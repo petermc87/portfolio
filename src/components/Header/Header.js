@@ -49,9 +49,9 @@ export default function Header () {
                 setHamburgerInitializer(true)
               }} className={styles.hMenu}
             >
-            <div className={styles.lineOneHm} />
-            <div className={styles.lineTwoHm} />
-            <div className={styles.lineThreeHm} />
+              <div className={styles.lineOneHm} />
+              <div className={styles.lineTwoHm} />
+              <div className={styles.lineThreeHm} />
             </div>
           : <div onClick={() => { setOpenHamburger(false) }} className={styles.hMenu}>
             &#10005;

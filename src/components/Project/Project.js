@@ -3,7 +3,6 @@ import styles from '../Project/Project.module.scss'
 export default function Project ({ image, title, url, blurb, tech, github }) {
   return (
     <div className={styles.projectContainer}>
-      {/* <h1>Project</h1> */}
       <div className={styles.projectImage}><img src={image} alt='gamescreen' /></div>
       <div className={styles.projectDescription}>
         <div>
