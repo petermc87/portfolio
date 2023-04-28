@@ -6,7 +6,7 @@ import Instafake from '../../../images/instafake.png'
 
 const piranhaMBlurb = 'Arcade style game where the player has control over a selected sprite, modeled on a fish, with the objective of eating smaller sprites (fish) before hull points are reduced to 0 by the impending Piranhas!'
 const yum2meBlurb = 'Food delivery MERN stack application comprising multiple functionalities across three different profiles and a comprehensive rating system.'
-const instafakeBlurb = 'Instfake is an Insragram clone, modeled on the real thing, but without the annoyance of sponsored content. The user has the ability to edit commments in place, a feature Instagram does not have.'
+const instafakeBlurb = 'Instfake is an Insragram clone, modeled on the real thing, but without the annoyance of sponsored content. The user also has the ability to edit commments in place, a feature Instagram does not have.'
 
 const piranhaTech = 'HTML, CSS, JavaScript'
 const yum2meTech = 'MongoDB, Mongoose, Express, Node, React, CSS'
