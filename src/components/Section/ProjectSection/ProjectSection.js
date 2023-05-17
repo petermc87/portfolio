@@ -3,6 +3,7 @@ import styles from '../ProjectSection/ProjectSection.module.scss'
 import Gamescreen from '../../../images/PM-gamescreen.png'
 import Yum2me from '../../../images/yum2me.png'
 import Instafake from '../../../images/instafake.png'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const piranhaMBlurb = 'Arcade style game where the player has control over a selected sprite, modeled on a fish, with the objective of eating smaller sprites (fish) before hull points are reduced to 0 by the impending Piranhas!'
 const yum2meBlurb = 'Food delivery MERN stack application comprising multiple functionalities across three different profiles and a comprehensive rating system.'
@@ -17,30 +18,36 @@ export default function ProjectSection () {
     <div className={styles.projectSection}>
       <br />
       <div className={styles.heading}><div className={styles.dash}></div><h4>WORK</h4></div>
-      <Project
-        image={Gamescreen}
-        title='Piranha Madness!'
-        url='https://petermc87.github.io/piranha-madness/'
-        github='https://github.com/petermc87/project_1_piranha_madness'
-        blurb={piranhaMBlurb}
-        tech={piranhaTech}
-      />
-      <Project
-        image={Yum2me}
-        title='Yum2me'
-        url='https://starfish-app-glmra.ondigitalocean.app/'
-        github='https://github.com/petermc87/yum2me'
-        blurb={yum2meBlurb}
-        tech={yum2meTech}
-      />
-      <Project
-        image={Instafake}
-        title='Instafake'
-        url='https://instafake.herokuapp.com/'
-        github='https://github.com/bjlovee/instagram'
-        blurb={instafakeBlurb}
-        tech={instafakeTech}
-      />
+      <AnimationOnScroll animateIn="animate__bounceIn">
+        <Project
+          image={Gamescreen}
+          title='Piranha Madness!'
+          url='https://petermc87.github.io/piranha-madness/'
+          github='https://github.com/petermc87/project_1_piranha_madness'
+          blurb={piranhaMBlurb}
+          tech={piranhaTech}
+        />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn">
+        <Project
+          image={Yum2me}
+          title='Yum2me'
+          url='https://starfish-app-glmra.ondigitalocean.app/'
+          github='https://github.com/petermc87/yum2me'
+          blurb={yum2meBlurb}
+          tech={yum2meTech}
+        />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__bounceIn"> 
+        <Project
+          image={Instafake}
+          title='Instafake'
+          url='https://instafake.herokuapp.com/'
+          github='https://github.com/bjlovee/instagram'
+          blurb={instafakeBlurb}
+          tech={instafakeTech}
+        />
+       </AnimationOnScroll>
     </div>
   )
 }

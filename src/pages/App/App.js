@@ -1,10 +1,9 @@
-// import logo from './logo.svg';
-// import './App.css';
 import styles from '../App/App.module.scss'
 import Home from '../Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import About from '../About/About'
 import { Helmet } from 'react-helmet'
+import "animate.css/animate.min.css"
 
 function App () {
   return (
