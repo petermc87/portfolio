@@ -28,8 +28,9 @@ export default function Article ({ heroimage, improvimage }) {
             </div>
           </div>
         </article>
-      <AnimationOnScroll animateIn="animate__fadeIn">
+     
         <article className={styles.otherAbout}>
+           <AnimationOnScroll animateIn="animate__fadeIn">
           <div className={styles.aboutContents}>
             <div className={styles.aboutContents__image}>
               <img src={improvimage} alt='meandsaorla' />
@@ -46,8 +47,9 @@ export default function Article ({ heroimage, improvimage }) {
               </p>
             </div>
           </div>
+            </AnimationOnScroll>
         </article>
-      </AnimationOnScroll>
+
     </div>
   )
 }

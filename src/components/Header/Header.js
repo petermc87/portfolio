@@ -32,7 +32,7 @@ export default function Header () {
           <h2>Home</h2>
         </div>
         <div className={styles.navSelector}>
-          <a href='https://drive.google.com/file/d/1P-rJAngW4H6uVB8GTSPpEKDAICFV9YT4/view?usp=sharing'>
+          <a href='https://drive.google.com/file/d/1w-eaxRSc4JkG2KlT2SoaL8U1J12ckOQB/view?usp=sharing'>
             <h2>Resume</h2>
           </a>
         </div>
