@@ -1,5 +1,4 @@
 import styles from '../Article/Article.module.scss'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 export default function Article ({ heroimage, improvimage }) {
   return (
@@ -30,7 +29,6 @@ export default function Article ({ heroimage, improvimage }) {
         </article>
      
         <article className={styles.otherAbout}>
-           <AnimationOnScroll animateIn="animate__fadeIn">
           <div className={styles.aboutContents}>
             <div className={styles.aboutContents__image}>
               <img src={improvimage} alt='meandsaorla' />
@@ -47,9 +45,7 @@ export default function Article ({ heroimage, improvimage }) {
               </p>
             </div>
           </div>
-            </AnimationOnScroll>
         </article>
-
     </div>
   )
 }

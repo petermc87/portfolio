@@ -1,5 +1,4 @@
 .intro{
-    // border: solid green;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -8,15 +7,11 @@
 }
 
 .intro > h1{
-    // font-size: 8rem;
     font-weight: 900;
     animation: slide-up ease-in 0.5s;
 }
 
 .intro > p{
-    // font-size: 2.5rem;
-    // max-width:35rem;
-    // line-height: 4rem;
     font-weight: 100;
     color: var(--info-text);
     animation: slide-right ease-in 0.5s forwards;
@@ -40,18 +35,14 @@
 @media only screen and (min-width: 1200px)  {
     .intro > p{
         font-size: 2.5rem;
-        max-width: 55rem;
+        // max-width: 55rem;
         line-height: 4rem;
     }
 
     .intro > h1{
         font-size: 8rem;
     }
-
 }
-
-
-
 
 
 span{
