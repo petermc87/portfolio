@@ -14,7 +14,7 @@ export default function CompetenciesSection () {
           />
           <Competency
             title='Languages'
-            skills='JavaScript, HTML, CSS, SCSS, Python, GOLang'
+            skills='JavaScript, HTML, CSS, SCSS, Python, GOLang, TypeScript'
           />
           <Competency
             title='Frameworks'
