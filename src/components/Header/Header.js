@@ -2,7 +2,9 @@ import styles from '../Header/Header.module.scss'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 export default function Header () {
+  //Hamburger open state.
   const [openHamburger, setOpenHamburger] = useState(false)
+  // Initializing the hamburger state -> this is so that it doesnt open on page load.
   const [hamburgerInitializer, setHamburgerInitializer] = useState(false)
   const navigate = useNavigate()
 
@@ -32,7 +34,7 @@ export default function Header () {
           <h2>Home</h2>
         </div>
         <div className={styles.navSelector}>
-          <a href='https://drive.google.com/file/d/1w-eaxRSc4JkG2KlT2SoaL8U1J12ckOQB/view?usp=sharing'>
+          <a href='https://docs.google.com/document/d/1Fy5fuFSfvd2DgVjssIXt6aanI8szllzd-eIvqWZuTug/edit?usp=drivesdk'>
             <h2>Resume</h2>
           </a>
         </div>

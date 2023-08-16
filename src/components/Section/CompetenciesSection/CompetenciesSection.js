@@ -10,19 +10,19 @@ export default function CompetenciesSection () {
         <div className={styles.competenciesContainersWrapper}>
           <Competency
             title='Databases'
-            skills='MongoDB'
+            skills='MongoDB, Postgres'
           />
           <Competency
             title='Languages'
-            skills='JavaScript, HTML, CSS, SCSS, Python'
+            skills='JavaScript, HTML, CSS, SCSS, Python, GOLang'
           />
           <Competency
             title='Frameworks'
-            skills='React.js, Node.js, Express.js, Mongoose.js, Bootsrap'
+            skills='React.js, Node.js, Express.js, Mongoose.js, Bootsrap, Next.js, Storybook, Strapi'
           />
-                <Competency
+          <Competency
             title='Software Development Tools'
-            skills='Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio'
+            skills='Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio, Docker'
           />
           <Competency
             title='Methodologies'
