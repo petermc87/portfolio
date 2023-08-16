@@ -1,18 +1,15 @@
 import Project from '../../Project/Project'
 import styles from '../ProjectSection/ProjectSection.module.scss'
 import Gamescreen from '../../../images/PM-gamescreen.png'
-import Yum2me from '../../../images/yum2me.png'
 import MapAndSnap from '../../../images/mapandsnap.png'
 import Instafake from '../../../images/instafake.png'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const piranhaMBlurb = 'Arcade style game where the player has control over a selected sprite, modeled on a fish, with the objective of eating smaller sprites (fish) before hull points are reduced to 0 by the impending Piranhas!'
-const yum2meBlurb = 'Food delivery MERN stack application comprising multiple functionalities across three different profiles and a comprehensive rating system.'
 const instafakeBlurb = 'Instafake is an Insragram clone, modeled on the real thing, but without the annoyance of sponsored content. The user also has the ability to edit commments in place, a feature Instagram does not have.'
 const droneServicesBlurb = 'A services website for a small side business of mine offering Photography, Videography and Mapping.'
 
 const piranhaTech = 'HTML, CSS, JavaScript'
-const yum2meTech = 'MongoDB, Mongoose, Express, Node, React, CSS'
 const instafakeTech = 'MongoDB, Mongoose, Express, Node, React, SCSS'
 const droneTech = 'React, SCSS, Node, EmailJS'
 
