@@ -16,9 +16,15 @@ export default function Project ({ image, title, url, blurb, tech, github }) {
             </div>
           </div>
           <div className={styles.buttonContainer}>
-            <a href={url}>
-              <div className={styles.button}><h4>Launch App</h4></div>
-            </a>
+            {/* Create a ternary to determine whether there is a live link to the app. */}
+            {/* If not, make sure there is a greyed out button */}
+            {url !== 'IN DEVELOPMENT'
+              ? <a href={url}>
+                <div className={styles.button}><h4>Launch App</h4></div>
+              </a>
+
+              : <div className={styles.button} style={{ borderColor: 'gray' }}><h4 style={{ color: 'gray' }}>Coming Soon...</h4></div>}
+
             <a href={github}>
               <div className={styles.button}><h4>Github</h4></div>
             </a>
