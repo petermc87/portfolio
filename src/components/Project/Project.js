@@ -1,12 +1,14 @@
 import styles from '../Project/Project.module.scss'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
+
 export default function Project ({ image, title, url, blurb, tech, github }) {
   return (
+    <AnimationOnScroll animateIn="animate__fadeIn">
     <div className={styles.projectContainer}>
-      <div className={styles.projectImage}><img src={image} alt='gamescreen' /></div>
+      <div className={styles.projectImage}><img src={image} alt='image' /></div>
       <div className={styles.projectDescription}>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        
           <div>
             <h2>{title}</h2>
             <p>{blurb}</p>
@@ -22,8 +24,9 @@ export default function Project ({ image, title, url, blurb, tech, github }) {
               <div className={styles.button}><h4>Github</h4></div>
             </a>
           </div>
-        </AnimationOnScroll>
+        
       </div>
     </div>
+    </AnimationOnScroll>
   )
 }
