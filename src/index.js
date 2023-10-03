@@ -19,7 +19,7 @@ root.render(
 
 const SendAnalytics = () => {
   ReactGA.send({
-    hitType: "pageview",
+    hitType: 'pageview',
     page: window.location.pathname
   })
 }

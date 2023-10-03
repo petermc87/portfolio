@@ -4,9 +4,9 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 export default function CompetenciesSection () {
   return (
-    <AnimationOnScroll animateIn="animate__bounceIn">
+    <AnimationOnScroll animateIn='animate__bounceIn'>
       <div className={styles.competenciesWrapper}>
-        <div className={styles.heading}><div className={styles.dash}></div><h4>SKILLS</h4></div>
+        <div className={styles.heading}><div className={styles.dash} /><h4>SKILLS</h4></div>
         <div className={styles.competenciesContainersWrapper}>
           <Competency
             title='Databases'
@@ -29,11 +29,11 @@ export default function CompetenciesSection () {
             skills='Design Research, User Flows, MVC Architecture, Test-Driven Development, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Agile Development'
           />
         </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </AnimationOnScroll>
   )
