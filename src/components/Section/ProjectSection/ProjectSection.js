@@ -54,10 +54,8 @@ export default function ProjectSection () {
     <div className={styles.projectSection}>
       <br />
       <div className={styles.heading}><div className={styles.dash}></div><h4>WORK</h4></div>
-      {/* <AnimationOnScroll animateIn="animate__bounceIn"> */}
         {      
         projects.map((project) => {
-          // console.log(project.image)
             return (
               <Project
                 image={project.image}
