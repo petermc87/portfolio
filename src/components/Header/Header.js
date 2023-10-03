@@ -34,7 +34,7 @@ export default function Header () {
           <h2>Home</h2>
         </div>
         <div className={styles.navSelector}>
-          <a href='https://docs.google.com/document/d/1Fy5fuFSfvd2DgVjssIXt6aanI8szllzd-eIvqWZuTug/edit?usp=drivesdk'>
+          <a href='https://drive.google.com/file/d/1LaVL8Wi6fC5TyvBpWzHEyl-yKSTZzNdQ/view?usp=sharing'>
             <h2>Resume</h2>
           </a>
         </div>
