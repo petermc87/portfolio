@@ -8,6 +8,9 @@ export default function Header () {
   const [hamburgerInitializer, setHamburgerInitializer] = useState(false)
   const navigate = useNavigate()
 
+  // Variable for the link to the updated resume.
+  const resume = 'https://drive.google.com/file/d/1LaVL8Wi6fC5TyvBpWzHEyl-yKSTZzNdQ/view?usp=sharing'
+
   const handleHomeNavigate = () => {
     navigate('/')
   }
@@ -69,7 +72,7 @@ export default function Header () {
             }}
           ><h1>Home</h1>
           </div>
-          <a href='https://drive.google.com/file/d/1P-rJAngW4H6uVB8GTSPpEKDAICFV9YT4/view?usp=sharing'>
+          <a href={resume}>
             <div className={styles.navItem}><h1>Resume</h1></div>
           </a>
           <div
@@ -90,7 +93,7 @@ export default function Header () {
                 }}
               ><h1>Home</h1>
               </div>
-              <a href='https://drive.google.com/file/d/19UmH_5bRH1q4gbGMsO8-35fRxT8dFDvZ/view?usp=share_link'>
+              <a href={resume}>
                 <div className={styles.navItem}><h1>Resume</h1></div>
               </a>
               <div className={styles.navItem} onClick={() => { handleAboutNavigate() }}><h1>About</h1></div>
