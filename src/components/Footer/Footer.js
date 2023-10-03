@@ -11,25 +11,25 @@ export default function Footer () {
   return (
     <div className={styles.footer}>
 
-      <a href='https://www.linkedin.com/in/petermcgibney/'>
+      <a href='https://www.linkedin.com/in/petermcgibney/' target='_blank' rel='noopener noreferrer'>
         <div className={styles.linkedin}>
           <FontAwesomeIcon icon={faLinkedinIn} className='fa-solid fa-linkedin fa-3x' />
         </div>
       </a>
 
-      <a href='https://www.facebook.com/peter.mcgibney.3/'>
+      <a href='https://www.facebook.com/peter.mcgibney.3/' target='_blank' rel='noopener noreferrer'>
         <div className={styles.facebook}>
           <FontAwesomeIcon icon={faFacebook} className='fa-solid fa-facebook fa-3x' />
         </div>
       </a>
 
-      <a href='https://github.com/petermc87'>
+      <a href='https://github.com/petermc87' target='_blank' rel='noopener noreferrer'>
         <div className={styles.github}>
           <FontAwesomeIcon icon={faGithub} className='fa-solid fa-github fa-3x' />
         </div>
       </a>
 
-      <a href='https://www.instagram.com/petermc/'>
+      <a href='https://www.instagram.com/petermc/' target='_blank' rel='noopener noreferrer'>
         <div className={styles.instagram}>
           <FontAwesomeIcon icon={faInstagram} className='fa-solid fa-instagram fa-3x' />
         </div>

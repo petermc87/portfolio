@@ -19,7 +19,7 @@ export default function Project ({ image, title, url, blurb, tech, github }) {
             {/* Create a ternary to determine whether there is a live link to the app. */}
             {/* If not, make sure there is a greyed out button */}
             {url !== 'IN DEVELOPMENT'
-              ? <a href={url}>
+              ? <a href={url} target='_blank' rel='noopener noreferrer'>
                 <div className={styles.button}><h4>Launch App</h4></div>
               </a>
 
