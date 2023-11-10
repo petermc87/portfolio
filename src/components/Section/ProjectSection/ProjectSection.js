@@ -54,7 +54,7 @@ export default function ProjectSection () {
       <br />
       <div className={styles.heading}><div className={styles.dash} /><h4>WORK</h4></div>
       {
-        projects.map((project) => {
+        projects.map((project, i) => {
           return (
             <Project
               image={project.image}
@@ -63,6 +63,7 @@ export default function ProjectSection () {
               github={project.github}
               blurb={project.blurb}
               tech={project.tech}
+              key={i}
             />
           )
         })

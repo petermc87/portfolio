@@ -1,15 +1,13 @@
+$line: none;
+
 .competency{
     margin: 0.1rem;
-    // max-width: 80rem;
     box-shadow: 0 5px 10px rgb(240 240 240 / 20%);
     border-radius: var(--div-radius);
     border-width: 0.5px;
-    // width: 100%;
     text-align: left;
-    // max-width: 80rem;
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
     animation-delay: 1s;
     background-color: white;
     padding: 0.7rem;
@@ -29,14 +27,26 @@
     }
 }
 
-
+// Skills conatiner
 .skillsWrapper{
-    // border: solid black;
+    border: $line red;
     display: flex;
     flex-wrap: wrap;
-    div{
-        padding: 0 1rem 0 0;
-    }
+}
+
+.skillContainer{
+    border: $line green;
+}
+
+.skill{
+    border: $line blue;
+    margin: 1%;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color:  #ff5b3e;
+    opacity: 0.8;
+    box-shadow: 0 5px 10px rgb(240 240 240 / 20%);
+    color: white;
 }
 
 
