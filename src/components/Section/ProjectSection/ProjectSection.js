@@ -61,10 +61,10 @@ export default function ProjectSection() {
 
   const dataAnalytics = [
     {
-      note: "Please note, the following report is a PowerBI desktop file. It will require you to have access to the application in order to view it",
+      note: "Please note, the following report is a PowerBI desktop file. It will require you to have access to the application in order to view it.",
       image: require("../../../images/adventure-exec.png"),
       title: "Adventureworks Data Analysis",
-      url: "https://1drv.ms/u/s!AmjDb-y7H2B0gYkKo7_maJg2CO8f8w?e=SdDdZC",
+      url: "https://1drv.ms/u/s!AmjDb-y7H2B0gYkKo7_maJg2CO8f8w?e=UIAFGt",
       github: "n/a",
       blurb: `An analytics dashboard showing high level executive and detailed reports with full interactivity for a Bicycle sales and parts supply company.`,
       tech: "PowerBI",
