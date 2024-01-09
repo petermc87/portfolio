@@ -39,7 +39,7 @@ export default function ProjectSection() {
     },
     {
       note: "1. Log in to the Customer profile, select a restaurant, place an order, log out. 2. Log in as a Restaurant, select the restaurant ordered from, select 'Order History', select the order that should say 'not started'. Select 'Add Driver'. Add 'Jerry, Connecticut'. Log out. 3. Log in to Driver Profile, look for the order that says 'in progress'. Select the order, click 'Order Complete' ",
-      image: require("../../../images/instafake.png"),
+      image: require("../../../images/yum2me.png"),
       title: "Yum2me",
       url: "https://starfish-app-glmra.ondigitalocean.app/",
       github: "https://github.com/petermc87/yum-2-me",
