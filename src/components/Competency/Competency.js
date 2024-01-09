@@ -1,9 +1,8 @@
-import styles from '../Competency/Competency.module.scss'
+import styles from "../Competency/Competency.module.scss";
 
-export default function Competency ({ skills, title }) {
-
+export default function Competency({ skills, title }) {
   // Split the string coming in so the skills can be iterated.
-  const skillsArray = skills.split(',')
+  const skillsArray = skills.split(",");
 
   return (
     <div className={styles.competency}>
@@ -11,9 +10,13 @@ export default function Competency ({ skills, title }) {
       <div className={styles.skillsWrapper}>
         {/* Map out the skills to be shown here. */}
         {skillsArray.map((skill, i) => {
-          return <div key={i} className={styles.skill}>{skill}</div>
+          return (
+            <div key={i} className={styles.skill}>
+              {skill}
+            </div>
+          );
         })}
       </div>
     </div>
-  )
+  );
 }

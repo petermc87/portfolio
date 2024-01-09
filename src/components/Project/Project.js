@@ -1,7 +1,18 @@
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { IoAlertCircleOutline } from "react-icons/io5";
 import styles from "../Project/Project.module.scss";
 
-export default function Project({ image, title, url, blurb, tech, github }) {
+export default function Project({
+  image,
+  title,
+  url,
+  blurb,
+  note,
+  tech,
+  github,
+}) {
+  // Split up the blurb here if it has bold text.
+
   return (
     <AnimationOnScroll animateIn="animate__fadeIn">
       <div className={styles.projectContainer}>
@@ -12,6 +23,14 @@ export default function Project({ image, title, url, blurb, tech, github }) {
           <div>
             <h2>{title}</h2>
             <p>{blurb}</p>
+            {/* NOTE: Render this if the 'note' is not empty. */}
+            {note && (
+              <p id={styles.note}>
+                <IoAlertCircleOutline className={styles.alertIcon} />
+                {note}
+              </p>
+            )}
+
             <div>
               <p>
                 <span>Technologies Used:</span> {tech}
@@ -28,7 +47,7 @@ export default function Project({ image, title, url, blurb, tech, github }) {
                   <h4>Launch App</h4>
                 </div>
               </a>
-            ) : // --- LIVE LINK AND NO GITHUB LINK --- //
+            ) : // --- LIVE LINK AND NO GITHUB LINK (DATA ANALYTICS) --- //
             url !== "IN DEVELOPMENT" && github === "n/a" ? (
               <a href={url} target="_blank" rel="noopener noreferrer">
                 <div className={styles.button}>
@@ -36,7 +55,7 @@ export default function Project({ image, title, url, blurb, tech, github }) {
                 </div>
               </a>
             ) : (
-              // --- NO LIVE LINK ANS A GITHUB LINK --- //
+              // --- NO LIVE LINK AND A GITHUB LINK --- //
               <div className={styles.button} style={{ borderColor: "gray" }}>
                 <h4 style={{ color: "gray" }}>Coming Soon...</h4>
               </div>

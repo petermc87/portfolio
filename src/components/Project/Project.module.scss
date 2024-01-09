@@ -1,125 +1,132 @@
-@media only screen and (min-width: 960px)  {
-    .projectContainer{
-        display: flex;
-        justify-content: center;
-        max-width: 80rem;
-        border-radius: var(--div-radius);
-        margin-bottom: 2rem;
-        animation: fade-in ease-in 0.5s forwards;
-        animation-delay: 1s;
-        opacity: 0;
-    }
-    .projectImage{
-        border-radius: var(--div-radius) 0 0 var(--div-radius);
-        width: 70vw;
-    }
-    
-    .projectDescription{
-        padding: 2vw;
-        border-radius: 0 var(--div-radius) var(--div-radius) 0;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
-    .projectImage img{
-        height: 100%;
-        width: 100%;
-        border-radius: var(--div-radius) 0 0 var(--div-radius);
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
-
-}
-
-.buttonContainer{
-    // border: solid blue;
+@media only screen and (min-width: 960px) {
+  .projectContainer {
     display: flex;
-    justify-content: space-around;
-    padding: 2rem 0 0 0;
+    justify-content: center;
+    max-width: 80rem;
+    border-radius: var(--div-radius);
+    margin-bottom: 2rem;
+    animation: fade-in ease-in 0.5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  .projectImage {
+    border-radius: var(--div-radius) 0 0 var(--div-radius);
+    width: 70vw;
+  }
 
+  .projectDescription {
+    padding: 2vw;
+    border-radius: 0 var(--div-radius) var(--div-radius) 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  .projectImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--div-radius) 0 0 var(--div-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
-
-@media only screen and (max-width: 960px)  {
-    .projectContainer{
-        // border: solid orange;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 60rem;
-        border-radius: var(--small-div-radius);
-        margin-bottom: 2rem;
-        animation:  fade-in ease-in 0.5s forwards;
-        animation-delay: 1s;
-        opacity: 0;
-    }
-    .projectImage{
-        border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
-    }
-    .projectImage img{
-        height: 100%;
-        width: 100%;
-        border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
-        box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1);
-    }
-    
-    .projectDescription{
-        // border: solid blue;
-        padding: 2vw;
-        border-radius: 0 0 var(--small-div-radius) var(--small-div-radius);
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
-
-
+.buttonContainer {
+  // border: solid blue;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0 0 0;
 }
 
-.button{
-    border: solid var(--red);
-    border-radius: 2rem 2rem 2rem 2rem;
-    padding: 0.1rem;
-    text-align: center;
+@media only screen and (max-width: 960px) {
+  .projectContainer {
+    // border: solid orange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 60rem;
+    border-radius: var(--small-div-radius);
+    margin-bottom: 2rem;
+    animation: fade-in ease-in 0.5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  .projectImage {
+    border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
+  }
+  .projectImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--small-div-radius) var(--small-div-radius) 0 0;
+    box-shadow: 0 1px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  .projectDescription {
+    // border: solid blue;
+    padding: 2vw;
+    border-radius: 0 0 var(--small-div-radius) var(--small-div-radius);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
-.button h4{
-    margin: .7rem;
-    color: var(--red);
+.button {
+  border: solid var(--red);
+  border-radius: 2rem 2rem 2rem 2rem;
+  padding: 0.1rem;
+  text-align: center;
 }
 
-.button:hover{
-    cursor: pointer;
-    animation: hover ease-in 0.1s forwards;
+.button h4 {
+  margin: 0.7rem;
+  color: var(--red);
 }
 
-
-.projectDescription p{
-    color: var(--info-text);
+.button:hover {
+  cursor: pointer;
+  animation: hover ease-in 0.1s forwards;
 }
 
-.projectDescription h2{
-    color: rgb(49, 49, 49);
+.projectDescription p {
+  color: var(--info-text);
 }
-.projectDescription{
-    padding: 1rem 2rem 2rem 2rem;
+
+.projectDescription h2 {
+  color: rgb(49, 49, 49);
+}
+.projectDescription {
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+// Alert icon styling and important note.
+.alertIcon {
+  display: flex;
+  flex-direction: row;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#note {
+  background-color: rgb(252, 65, 3, 0.2);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 @keyframes hover {
-    0%   { 
-    opacity: 1; 	
-    }
-    100% { 
+  0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0.3;
-    }
-   }
-
+  }
+}
 
 @keyframes fade-in {
-    0%   { 
-    opacity: 0; 	
-    }
-    100% { 
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
-    }
+  }
 }

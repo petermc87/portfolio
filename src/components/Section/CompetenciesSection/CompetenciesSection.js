@@ -1,32 +1,36 @@
-import styles from '../CompetenciesSection/CompetenciesSection.module.scss'
-import Competency from '../../Competency/Competency'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import Competency from "../../Competency/Competency";
+import styles from "../CompetenciesSection/CompetenciesSection.module.scss";
 
-export default function CompetenciesSection () {
+export default function CompetenciesSection() {
   return (
-    <AnimationOnScroll animateIn='animate__bounceIn'>
+    <AnimationOnScroll animateIn="animate__fadeIn">
       <div className={styles.competenciesWrapper}>
-        <div className={styles.heading}><div className={styles.dash} /><h4>SKILLS</h4></div>
+        <div className={styles.heading}>
+          <div className={styles.dash} />
+          <h4>SKILLS</h4>
+        </div>
         <div className={styles.competenciesContainersWrapper}>
+          <Competency title="Databases" skills="MongoDB, Postgres" />
           <Competency
-            title='Databases'
-            skills='MongoDB, Postgres'
+            title="Languages"
+            skills="JavaScript, HTML, CSS, SCSS, Python, GOLang, TypeScript"
           />
           <Competency
-            title='Languages'
-            skills='JavaScript, HTML, CSS, SCSS, Python, GOLang, TypeScript'
+            title="Frameworks"
+            skills="React.js, Node.js, Express.js, Mongoose.js, Bootsrap, Next.js, Storybook, Strapi"
           />
           <Competency
-            title='Frameworks'
-            skills='React.js, Node.js, Express.js, Mongoose.js, Bootsrap, Next.js, Storybook, Strapi'
+            title="Software Development Tools"
+            skills="Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio, Docker"
           />
           <Competency
-            title='Software Development Tools'
-            skills='Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio, Docker'
+            title="Methodologies"
+            skills="Design Research, User Flows, MVC Architecture, Test-Driven Development, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Agile Development"
           />
           <Competency
-            title='Methodologies'
-            skills='Design Research, User Flows, MVC Architecture, Test-Driven Development, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Agile Development'
+            title="Data Analytics"
+            skills="DAX, PowerBI, Data Modeling"
           />
         </div>
         <br />
@@ -36,5 +40,5 @@ export default function CompetenciesSection () {
         <br />
       </div>
     </AnimationOnScroll>
-  )
+  );
 }
