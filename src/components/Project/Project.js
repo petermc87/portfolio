@@ -27,6 +27,28 @@ export default function Project({
             {note && (
               <p id={styles.note}>
                 <IoAlertCircleOutline className={styles.alertIcon} />
+                {/* Extra instructions for the user for Yum2me. This is so that */}
+                {/* the app can be demoed properly. */}
+                {title === "Yum2me" && (
+                  <>
+                    <strong>DEMO LOGIN</strong>
+                    <br />
+                    <br />- <span>Customer Profile:</span> email:{" "}
+                    <strong>j@j.com</strong>, password: <strong>12345</strong>
+                    <br />
+                    <br />- <span>Restaurant Profile:</span> email:
+                    <strong> me@gmail.com</strong>, password:{" "}
+                    <strong>12345</strong>
+                    <br />
+                    <br />- <span>Driver Profile:</span> email:{" "}
+                    <strong>jerry@mail.com</strong>, password:{" "}
+                    <strong>12345</strong>
+                    <br />
+                    <br />
+                    <strong>DEMO INSTRUCTIONS</strong>
+                    <br />
+                  </>
+                )}
                 {note}
               </p>
             )}

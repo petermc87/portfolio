@@ -38,13 +38,13 @@ export default function ProjectSection() {
       tech: "React, SCSS, Node, EmailJS",
     },
     {
-      note: "",
+      note: "1. Log in to the Customer profile, select a restaurant, place an order, log out. 2. Log in as a Restaurant, select the restaurant ordered from, select 'Order History', select the order that should say 'not started'. Select 'Add Driver'. Add 'Jerry, Connecticut'. Log out. 3. Log in to Driver Profile, look for the order that says 'in progress'. Select the order, click 'Order Complete' ",
       image: require("../../../images/instafake.png"),
-      title: "Instafake",
-      url: "https://instafake.herokuapp.com/",
-      github: "https://github.com/bjlovee/instagram",
+      title: "Yum2me",
+      url: "https://starfish-app-glmra.ondigitalocean.app/",
+      github: "https://github.com/petermc87/yum-2-me",
       blurb:
-        "Instafake is an Insragram clone, modeled on the real thing, but without the annoyance of sponsored content. The user also has the ability to edit commments in place, a feature Instagram does not have.",
+        "Yum2me adds a new dimension in food delivery, bringing users, restaurant owners, and drivers together effortlessly. Say goodbye to uncertainties with our exclusive driver rating system, promoting accountability and reliability. For a touch of transparency, restaurant profiles now unveil staff wages, letting you in on the behind-the-scenes details. Embrace a simpler, more connected way to enjoy your favorite meals – because great food is best enjoyed with peace of mind. The app achieved the MVP of fully interactive Customer, Restaurant and Driver profiles",
       tech: "MongoDB, Mongoose, Express, Node, React, SCSS",
     },
     {
