@@ -6,7 +6,7 @@ export default function ProjectSection () {
   // For each object there is a title, url, image, github, blurb and tech
 
   // Use require module to pass in the image static path to the component.
-  const projects = [
+  const devProjects = [
     {
       image: require('../../../images/symptologix.png'),
       title: 'Symptologix - IN DEVELOPMENT',
@@ -46,15 +46,27 @@ export default function ProjectSection () {
       github: 'https://github.com/petermc87/project_1_piranha_madness',
       blurb: 'Arcade style game where the player has control over a selected sprite, modeled on a fish, with the objective of eating smaller sprites (fish) before hull points are reduced to 0 by the impending Piranhas!',
       tech: 'HTML, CSS, JavaScript'
-    }
+    },
 
+
+  ]
+
+  const dataAnalytics = [
+    {
+      image: require('../../../images/adventure-exec.png'),
+      title: 'Adventureworks Reporting',
+      url: 'https://1drv.ms/u/s!AmjDb-y7H2B0gYkKo7_maJg2CO8f8w?e=SdDdZC',
+      github: 'n/a',
+      blurb: 'An analytics dashboard showing high level exective and detailed reports with full interactivity for a Bicycle sales and parts supply company. Please note, the following report is a PowerBI desktop file. It will require you to have access to the application in order to view it',
+      tech: 'PowerBI'
+    }
   ]
   return (
     <div className={styles.projectSection}>
       <br />
-      <div className={styles.heading}><div className={styles.dash} /><h4>WORK</h4></div>
+      <div className={styles.heading}><div className={styles.dash} /><h4>SOFTWARE DEVELOPMENT</h4></div>
       {
-        projects.map((project, i) => {
+        devProjects.map((project, i) => {
           return (
             <Project
               image={project.image}
@@ -67,7 +79,24 @@ export default function ProjectSection () {
             />
           )
         })
-}
+      }
+      <br />
+      <div className={styles.heading}><div className={styles.dash} /><h4>DATA ANALYTICS</h4></div>
+      {
+        dataAnalytics.map((project, i) => {
+          return (
+            <Project
+              image={project.image}
+              title={project.title}
+              url={project.url}
+              github={project.github}
+              blurb={project.blurb}
+              tech={project.tech}
+              key={i}
+            />
+          )
+        })
+      }
     </div>
   )
 }
