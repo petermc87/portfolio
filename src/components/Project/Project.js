@@ -1,5 +1,5 @@
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { IoAlertCircleOutline } from "react-icons/io5";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 import styles from "../Project/Project.module.scss";
 
 export default function Project({
@@ -26,7 +26,7 @@ export default function Project({
             {/* NOTE: Render this if the 'note' is not empty. */}
             {note && (
               <p id={styles.note}>
-                <IoAlertCircleOutline className={styles.alertIcon} />
+                <IoMdInformationCircleOutline className={styles.alertIcon} />
                 {/* Extra instructions for the user for Yum2me. This is so that */}
                 {/* the app can be demoed properly. */}
                 {title === "Yum2me" && (
