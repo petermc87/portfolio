@@ -10,7 +10,6 @@ export default function Header() {
 
   // Variable for the link to the updated resume.
   // NOTE: Resume up to 1/10/2024: "https://drive.google.com/file/d/1LaVL8Wi6fC5TyvBpWzHEyl-yKSTZzNdQ/view?usp=sharing";
-
   const resume =
     "https://drive.google.com/file/d/1CauAg3se1MYALEpsMsi0v8SuwxCIvKDV/view?usp=sharing";
 

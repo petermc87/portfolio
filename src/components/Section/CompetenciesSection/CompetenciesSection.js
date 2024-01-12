@@ -14,11 +14,11 @@ export default function CompetenciesSection() {
           <Competency title="Databases" skills="MongoDB, Postgres" />
           <Competency
             title="Languages"
-            skills="JavaScript, HTML, CSS, SCSS, Python, GOLang, TypeScript"
+            skills="JavaScript, HTML, CSS, SCSS, Python, TypeScript"
           />
           <Competency
             title="Frameworks"
-            skills="React.js, Node.js, Express.js, Mongoose.js, Bootsrap, Next.js, Storybook, Strapi"
+            skills="React.js, Node.js, Express.js, Mongoose.js, Bootstrap, Next.js"
           />
           <Competency
             title="Software Development Tools"
@@ -26,11 +26,11 @@ export default function CompetenciesSection() {
           />
           <Competency
             title="Methodologies"
-            skills="Design Research, User Flows, MVC Architecture, Test-Driven Development, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Agile Development"
+            skills="MVC Architecture, Responsive Design, Authentication, User Stories, ERDs, Wireframing, Scrum"
           />
           <Competency
             title="Data Analytics"
-            skills="DAX, PowerBI, Data Modeling"
+            skills="DAX, PowerBI, Power Query, Data Modeling"
           />
         </div>
         <br />

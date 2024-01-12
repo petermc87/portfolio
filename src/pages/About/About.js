@@ -1,11 +1,11 @@
-import Header from '../../components/Header/Header'
-import Article from '../../components/About/Article/Article'
-import styles from '../About/About.module.scss'
-import meandsaorla from '../../images/merandsaorla.png'
-import improv from '../../images/improv.jpeg'
-import Footer from '../../components/Footer/Footer'
+import Article from "../../components/About/Article/Article";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import improv from "../../images/improv.jpeg";
+import meandsaorla from "../../images/merandsaorla.png";
+import styles from "../About/About.module.scss";
 
-export default function About () {
+export default function About() {
   return (
     <>
       <Header />
@@ -14,12 +14,9 @@ export default function About () {
       <br />
       <br />
       <div className={styles.aboutMe}>
-        <Article
-          heroimage={meandsaorla}
-          improvimage={improv}
-        />
+        <Article heroimage={meandsaorla} improvimage={improv} />
       </div>
       <Footer />
     </>
-  )
+  );
 }
