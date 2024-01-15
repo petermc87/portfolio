@@ -22,7 +22,7 @@ export default function CompetenciesSection() {
           />
           <Competency
             title="Software Development Tools"
-            skills="Postman, Git, Github, Heroku, Digital Ocean, Netlify, Visual Studio, Docker"
+            skills="Postman, Github, Netlify, Visual Studio, Docker"
           />
           <Competency
             title="Methodologies"
