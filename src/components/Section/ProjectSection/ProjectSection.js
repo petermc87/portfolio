@@ -70,7 +70,7 @@ export default function ProjectSection() {
       tech: "PowerBI, DAX, Power Query",
     },
     {
-      note: "",
+      note: "The redirect link is to a PowerBI service website hosting a live interactive dashboard.",
       image: require("../../../images/cycles-exec.png"),
       title: "Maven Cycles",
       url: "https://app.powerbi.com/view?r=eyJrIjoiMDJlMWIzZWUtZTczYS00NTZjLTkwMGUtMTI1YTZjNjE2ZjQ5IiwidCI6IjQ1MGI0NTlkLWEyY2YtNGFkMy1iOWZiLWU1NTVmZDVmYTM4NiIsImMiOjN9",
