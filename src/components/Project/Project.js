@@ -84,7 +84,7 @@ export default function Project({
             )}
 
             {/* If the project is software dev, show GitHub. */}
-            {github !== "n/a" ? (
+            {github !== "n/a" || github !== "" ? (
               <a href={github}>
                 <div className={styles.button}>
                   <h4>Github</h4>

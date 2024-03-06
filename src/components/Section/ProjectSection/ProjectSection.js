@@ -69,6 +69,16 @@ export default function ProjectSection() {
       blurb: `An analytics dashboard showing high level executive and detailed reports with full interactivity for a Bicycle sales and parts supply company.`,
       tech: "PowerBI, DAX, Power Query",
     },
+    {
+      note: "",
+      image: require("../../../images/cycles-exec.png"),
+      title: "Maven Cycles",
+      url: "https://app.powerbi.com/view?r=eyJrIjoiMDJlMWIzZWUtZTczYS00NTZjLTkwMGUtMTI1YTZjNjE2ZjQ5IiwidCI6IjQ1MGI0NTlkLWEyY2YtNGFkMy1iOWZiLWU1NTVmZDVmYTM4NiIsImMiOjN9",
+      github: "",
+      blurb:
+        "Data insights for a bicycle retailer with a global reach. Power BI was used to create a high-level overview of key KPIs, with granular analysis performed on a number of different data metrics.",
+      tech: "PowerBI, DAX, Power Query",
+    },
   ];
   return (
     <div className={styles.projectSection}>
