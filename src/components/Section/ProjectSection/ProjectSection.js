@@ -8,6 +8,16 @@ export default function ProjectSection() {
   // Use require module to pass in the image static path to the component.
   const devProjects = [
     {
+      note: "The app features a demo profile. Please select login or signup to access the demo button at the bottom of the modal.",
+      image: require("../../../images/jobtrack.png"),
+      title: "JobTrack",
+      url: "https://jobtrack-jade.vercel.app/",
+      github: "https://github.com/petermc87/jobtrack",
+      blurb:
+        "Use JobTrack to keep on top of you job applications. It uses a simple storage method to keep track of up-to-date information about a particular job and application status. ",
+      tech: "Next, Vercel, TypeScript, Prisma, GraphQL, Apollo, Postgres, Node, SCSS",
+    },
+    {
       note: "",
       image: require("../../../images/symptologix.png"),
       title: "Symptologix - IN DEVELOPMENT",
