@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Project from "../../Project/Project";
 import styles from "../ProjectSection/ProjectSection.module.scss";
 
 export default function ProjectSection() {
+  // State for showing projects.
+  const [showSoftware, setShowSoftware] = useState(false);
+
   // Create an array of objects that gets looped over.
   // For each object there is a title, url, image, github, blurb and tech
 
@@ -97,20 +101,28 @@ export default function ProjectSection() {
         <div className={styles.dash} />
         <h4>SOFTWARE DEVELOPMENT</h4>
       </div>
-      {devProjects.map((project, i) => {
-        return (
-          <Project
-            image={project.image}
-            title={project.title}
-            url={project.url}
-            github={project.github}
-            blurb={project.blurb}
-            note={project.note}
-            tech={project.tech}
-            key={i}
-          />
-        );
-      })}
+      {!showSoftware && (
+        <button onClick={() => setShowSoftware(true)}>Show</button>
+      )}
+
+      {showSoftware &&
+        devProjects.map((project, i) => {
+          return (
+            <Project
+              image={project.image}
+              title={project.title}
+              url={project.url}
+              github={project.github}
+              blurb={project.blurb}
+              note={project.note}
+              tech={project.tech}
+              key={i}
+            />
+          );
+        })}
+      {showSoftware && (
+        <button onClick={() => setShowSoftware(false)}>Hide</button>
+      )}
       <br />
       <div className={styles.heading}>
         <div className={styles.dash} />
