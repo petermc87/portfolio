@@ -5,6 +5,7 @@ import styles from "../ProjectSection/ProjectSection.module.scss";
 export default function ProjectSection() {
   // State for showing projects.
   const [showSoftware, setShowSoftware] = useState(false);
+  const [showDataAnalytics, setShowDataAnalytics] = useState(false);
 
   // Create an array of objects that gets looped over.
   // For each object there is a title, url, image, github, blurb and tech
@@ -95,53 +96,66 @@ export default function ProjectSection() {
     },
   ];
   return (
-    <div className={styles.projectSection}>
-      <br />
-      <div className={styles.heading}>
-        <div className={styles.dash} />
-        <h4>SOFTWARE DEVELOPMENT</h4>
-      </div>
-      {!showSoftware && (
-        <button onClick={() => setShowSoftware(true)}>Show</button>
-      )}
+    <>
+      <div className={styles.projectSection}>
+        <br />
+        <div className={styles.heading}>
+          <div className={styles.dash} />
+          <h4>SOFTWARE DEVELOPMENT</h4>
+        </div>
+        {/* Show button to reveal the projects. This will only be visible when  */}
+        {/* the state is false. */}
+        {!showSoftware && (
+          <button onClick={() => setShowSoftware(true)}>Show</button>
+        )}
 
-      {showSoftware &&
-        devProjects.map((project, i) => {
-          return (
-            <Project
-              image={project.image}
-              title={project.title}
-              url={project.url}
-              github={project.github}
-              blurb={project.blurb}
-              note={project.note}
-              tech={project.tech}
-              key={i}
-            />
-          );
-        })}
-      {showSoftware && (
-        <button onClick={() => setShowSoftware(false)}>Hide</button>
-      )}
-      <br />
-      <div className={styles.heading}>
-        <div className={styles.dash} />
-        <h4>DATA ANALYTICS</h4>
+        {/* Ternary for ensuring the projects are only shown when the 'Show' */}
+        {/* button is selected. */}
+        {showSoftware &&
+          devProjects.map((project, i) => {
+            return (
+              <Project
+                image={project.image}
+                title={project.title}
+                url={project.url}
+                github={project.github}
+                blurb={project.blurb}
+                note={project.note}
+                tech={project.tech}
+                key={i}
+              />
+            );
+          })}
+        {showSoftware && (
+          <button onClick={() => setShowSoftware(false)}>Hide</button>
+        )}
+        <br />
+        <div className={styles.heading}>
+          <div className={styles.dash} />
+          <h4>DATA ANALYTICS</h4>
+        </div>
+        {!showDataAnalytics && (
+          <button onClick={() => setShowDataAnalytics(true)}>Show</button>
+        )}
+        {showDataAnalytics &&
+          dataAnalytics.map((project, i) => {
+            return (
+              <Project
+                image={project.image}
+                title={project.title}
+                url={project.url}
+                github={project.github}
+                blurb={project.blurb}
+                note={project.note}
+                tech={project.tech}
+                key={i}
+              />
+            );
+          })}
       </div>
-      {dataAnalytics.map((project, i) => {
-        return (
-          <Project
-            image={project.image}
-            title={project.title}
-            url={project.url}
-            github={project.github}
-            blurb={project.blurb}
-            note={project.note}
-            tech={project.tech}
-            key={i}
-          />
-        );
-      })}
-    </div>
+      {showDataAnalytics && (
+        <button onClick={() => setShowDataAnalytics(false)}>Hide</button>
+      )}
+    </>
   );
 }
