@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import Project from "../../Project/Project";
 import styles from "../ProjectSection/ProjectSection.module.scss";
 
@@ -106,7 +107,14 @@ export default function ProjectSection() {
         {/* Show button to reveal the projects. This will only be visible when  */}
         {/* the state is false. */}
         {!showSoftware && (
-          <button onClick={() => setShowSoftware(true)}>Show</button>
+          <div className={styles.buttonWrapper}>
+            <div
+              className={styles.button}
+              onClick={() => setShowSoftware(true)}
+            >
+              <IoChevronDown />
+            </div>
+          </div>
         )}
 
         {/* Ternary for ensuring the projects are only shown when the 'Show' */}
@@ -127,7 +135,14 @@ export default function ProjectSection() {
             );
           })}
         {showSoftware && (
-          <button onClick={() => setShowSoftware(false)}>Hide</button>
+          <div className={styles.buttonWrapper}>
+            <div
+              className={styles.button}
+              onClick={() => setShowSoftware(false)}
+            >
+              <IoChevronUp />
+            </div>
+          </div>
         )}
         <br />
         <div className={styles.heading}>
@@ -135,7 +150,14 @@ export default function ProjectSection() {
           <h4>DATA ANALYTICS</h4>
         </div>
         {!showDataAnalytics && (
-          <button onClick={() => setShowDataAnalytics(true)}>Show</button>
+          <div className={styles.buttonWrapper}>
+            <div
+              className={styles.button}
+              onClick={() => setShowDataAnalytics(true)}
+            >
+              <IoChevronDown />
+            </div>
+          </div>
         )}
         {showDataAnalytics &&
           dataAnalytics.map((project, i) => {
@@ -154,7 +176,14 @@ export default function ProjectSection() {
           })}
       </div>
       {showDataAnalytics && (
-        <button onClick={() => setShowDataAnalytics(false)}>Hide</button>
+        <div className={styles.buttonWrapper}>
+          <div
+            className={styles.button}
+            onClick={() => setShowDataAnalytics(false)}
+          >
+            <IoChevronUp />
+          </div>
+        </div>
       )}
     </>
   );
