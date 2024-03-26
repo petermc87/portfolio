@@ -12,9 +12,10 @@ export default function Project({
   github,
 }) {
   // Split up the blurb here if it has bold text.
-
-  return (
-    <AnimationOnScroll animateIn="animate__fadeIn">
+  // Create a function that will return the project container with all the
+  // appropriate styling.
+  const projectContainer = () => {
+    return (
       <div className={styles.projectContainer}>
         <div className={styles.projectImage}>
           <img src={image} alt="hero" />
@@ -96,6 +97,20 @@ export default function Project({
           </div>
         </div>
       </div>
-    </AnimationOnScroll>
+    );
+  };
+
+  return (
+    <>
+      {/* This allows the first job container to reveal on show rather than on */}
+      {/* scroll. */}
+      {title === "Adventureworks Data Analysis" || title === "JobTrack" ? (
+        <>{projectContainer()}</>
+      ) : (
+        <AnimationOnScroll animateIn="animate__fadeIn">
+          {projectContainer()}
+        </AnimationOnScroll>
+      )}
+    </>
   );
 }
