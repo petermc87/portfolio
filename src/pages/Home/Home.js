@@ -1,10 +1,11 @@
-import Header from '../../components/Header/Header'
-import IntroSection from '../../components/Section/IntroSection/IntroSection'
-import ProjectSection from '../../components/Section/ProjectSection/ProjectSection'
-import CompetenciesSection from '../../components/Section/CompetenciesSection/CompetenciesSection'
-import Footer from '../../components/Footer/Footer'
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import AboutSection from "../../components/Section/AboutSection/AboutSection";
+import CompetenciesSection from "../../components/Section/CompetenciesSection/CompetenciesSection";
+import IntroSection from "../../components/Section/IntroSection/IntroSection";
+import ProjectSection from "../../components/Section/ProjectSection/ProjectSection";
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <Header />
@@ -12,8 +13,9 @@ export default function Home () {
         <IntroSection />
         <ProjectSection />
         <CompetenciesSection />
+        <AboutSection />
       </main>
       <Footer />
     </>
-  )
+  );
 }
