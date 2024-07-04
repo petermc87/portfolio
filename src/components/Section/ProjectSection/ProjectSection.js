@@ -1,12 +1,10 @@
-import { useState } from "react";
-import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 import Project from "../../Project/Project";
 import styles from "../ProjectSection/ProjectSection.module.scss";
 
 export default function ProjectSection() {
   // State for showing projects.
-  const [showSoftware, setShowSoftware] = useState(false);
-  const [showDataAnalytics, setShowDataAnalytics] = useState(false);
+  // const [showSoftware, setShowSoftware] = useState(false);
+  // const [showDataAnalytics, setShowDataAnalytics] = useState(false);
 
   // Create an array of objects that gets looped over.
   // For each object there is a title, url, image, github, blurb and tech
@@ -104,87 +102,43 @@ export default function ProjectSection() {
           <div className={styles.dash} />
           <h4>SOFTWARE DEVELOPMENT</h4>
         </div>
-        {/* Show button to reveal the projects. This will only be visible when  */}
-        {/* the state is false. */}
-        {!showSoftware && (
-          <div className={styles.buttonWrapper}>
-            <div
-              className={styles.button}
-              onClick={() => setShowSoftware(true)}
-            >
-              <IoChevronDown />
-            </div>
-          </div>
-        )}
 
-        {/* Ternary for ensuring the projects are only shown when the 'Show' */}
-        {/* button is selected. */}
-        {showSoftware &&
-          devProjects.map((project, i) => {
-            return (
-              <Project
-                image={project.image}
-                title={project.title}
-                url={project.url}
-                github={project.github}
-                blurb={project.blurb}
-                note={project.note}
-                tech={project.tech}
-                key={i}
-              />
-            );
-          })}
-        {showSoftware && (
-          <div className={styles.buttonWrapper}>
-            <div
-              className={styles.button}
-              onClick={() => setShowSoftware(false)}
-            >
-              <IoChevronUp />
-            </div>
-          </div>
-        )}
+        {devProjects.map((project, i) => {
+          return (
+            <Project
+              image={project.image}
+              title={project.title}
+              url={project.url}
+              github={project.github}
+              blurb={project.blurb}
+              note={project.note}
+              tech={project.tech}
+              key={i}
+            />
+          );
+        })}
+
         <br />
         <div className={styles.heading}>
           <div className={styles.dash} />
           <h4>DATA ANALYTICS</h4>
         </div>
-        {!showDataAnalytics && (
-          <div className={styles.buttonWrapper}>
-            <div
-              className={styles.button}
-              onClick={() => setShowDataAnalytics(true)}
-            >
-              <IoChevronDown />
-            </div>
-          </div>
-        )}
-        {showDataAnalytics &&
-          dataAnalytics.map((project, i) => {
-            return (
-              <Project
-                image={project.image}
-                title={project.title}
-                url={project.url}
-                github={project.github}
-                blurb={project.blurb}
-                note={project.note}
-                tech={project.tech}
-                key={i}
-              />
-            );
-          })}
+
+        {dataAnalytics.map((project, i) => {
+          return (
+            <Project
+              image={project.image}
+              title={project.title}
+              url={project.url}
+              github={project.github}
+              blurb={project.blurb}
+              note={project.note}
+              tech={project.tech}
+              key={i}
+            />
+          );
+        })}
       </div>
-      {showDataAnalytics && (
-        <div className={styles.buttonWrapper}>
-          <div
-            className={styles.button}
-            onClick={() => setShowDataAnalytics(false)}
-          >
-            <IoChevronUp />
-          </div>
-        </div>
-      )}
     </>
   );
 }
