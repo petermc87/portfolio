@@ -11,7 +11,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Peter McGibney</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://petermcgibney.com/" />
         <meta name="description" content="Portfolio website" />
       </Helmet>
       <Routes>
