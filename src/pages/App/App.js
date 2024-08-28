@@ -1,7 +1,6 @@
 import "animate.css/animate.min.css";
 import { Helmet } from "react-helmet";
 import { Route, Routes } from "react-router-dom";
-import About from "../About/About";
 import styles from "../App/App.module.scss";
 import Home from "../Home/Home";
 
@@ -16,7 +15,6 @@ function App() {
       </Helmet>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

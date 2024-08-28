@@ -1,7 +1,7 @@
 import Project from "../../Project/Project";
 import styles from "../ProjectSection/ProjectSection.module.scss";
 
-export default function ProjectSection() {
+export default function ProjectSection({ projectsRef }) {
   // State for showing projects.
   // const [showSoftware, setShowSoftware] = useState(false);
   // const [showDataAnalytics, setShowDataAnalytics] = useState(false);
@@ -96,7 +96,7 @@ export default function ProjectSection() {
   ];
   return (
     <>
-      <div className={styles.projectSection}>
+      <div className={styles.projectSection} ref={projectsRef}>
         <br />
         <div className={styles.heading}>
           <div className={styles.dash} />

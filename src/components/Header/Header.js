@@ -1,25 +1,22 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import styles from "../Header/Header.module.scss";
-export default function Header() {
+export default function Header({
+  homeRef,
+  aboutRef,
+  projectsRef,
+  refHandleClick,
+}) {
   // Hamburger open state.
   const [openHamburger, setOpenHamburger] = useState(false);
   // Initializing the hamburger state -> this is so that it doesnt open on page load.
   const [hamburgerInitializer, setHamburgerInitializer] = useState(false);
-  const navigate = useNavigate();
 
   // Variable for the link to the updated resume.
   // NOTE: Resume up to 1/10/2024: "https://drive.google.com/file/d/1LaVL8Wi6fC5TyvBpWzHEyl-yKSTZzNdQ/view?usp=sharing";
+  // NOTE: Resume to 10/3/2023: https://drive.google.com/file/d/1CauAg3se1MYALEpsMsi0v8SuwxCIvKDV/view?usp=sharing
+
   const resume =
-    "https://drive.google.com/file/d/1CauAg3se1MYALEpsMsi0v8SuwxCIvKDV/view?usp=sharing";
-
-  const handleHomeNavigate = () => {
-    navigate("/");
-  };
-
-  const handleAboutNavigate = () => {
-    navigate("/about");
-  };
+    "https://drive.google.com/file/d/1u_KF112QZh52my-BQw6yWtN-WL3kQ34-/view?usp=sharing";
 
   function sendEmail() {
     window.location.assign("mailto:peter.mcgibney@gmail.com");
@@ -31,7 +28,7 @@ export default function Header() {
         <div
           className={styles.logo}
           onClick={() => {
-            handleHomeNavigate();
+            refHandleClick(homeRef);
           }}
         >
           <div className={styles.straight} />
@@ -43,10 +40,10 @@ export default function Header() {
         <div
           className={styles.navSelector}
           onClick={() => {
-            handleHomeNavigate();
+            refHandleClick(projectsRef);
           }}
         >
-          <h2>Home</h2>
+          <h2>Projects</h2>
         </div>
         <div className={styles.navSelector}>
           {/* Target attribute will open a new tab. The rel will prevent tab nabbing. */}
@@ -57,7 +54,7 @@ export default function Header() {
         <div
           className={styles.navSelector}
           onClick={() => {
-            handleAboutNavigate();
+            refHandleClick(aboutRef);
           }}
         >
           <h2>About</h2>
@@ -98,11 +95,11 @@ export default function Header() {
           <div
             className={styles.navItem}
             onClick={() => {
-              handleHomeNavigate();
+              refHandleClick(projectsRef);
               setOpenHamburger(false);
             }}
           >
-            <h1>Home</h1>
+            <h1>Projects</h1>
           </div>
           <a href={resume} target="_blank" rel="noopener noreferrer">
             <div className={styles.navItem}>
@@ -112,7 +109,7 @@ export default function Header() {
           <div
             className={styles.navItem}
             onClick={() => {
-              handleAboutNavigate();
+              refHandleClick(aboutRef);
               setOpenHamburger(false);
             }}
           >
@@ -132,11 +129,11 @@ export default function Header() {
           <div
             className={styles.navItem}
             onClick={() => {
-              handleHomeNavigate();
+              refHandleClick(homeRef);
               setOpenHamburger(false);
             }}
           >
-            <h1>Home</h1>
+            <h1>Projects</h1>
           </div>
           <a href={resume}>
             <div className={styles.navItem}>
@@ -146,7 +143,7 @@ export default function Header() {
           <div
             className={styles.navItem}
             onClick={() => {
-              handleAboutNavigate();
+              refHandleClick(aboutRef);
             }}
           >
             <h1>About</h1>
