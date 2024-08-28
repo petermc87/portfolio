@@ -16,7 +16,7 @@ export default function Header({
   // NOTE: Resume to 10/3/2023: https://drive.google.com/file/d/1CauAg3se1MYALEpsMsi0v8SuwxCIvKDV/view?usp=sharing
 
   const resume =
-    "https://drive.google.com/file/d/1u_KF112QZh52my-BQw6yWtN-WL3kQ34-/view?usp=sharing";
+    "https://drive.google.com/file/d/1E4lIqCM5B0N5nFhT2ZzyvHzfQ9jBEz3G/view?usp=sharing";
 
   function sendEmail() {
     window.location.assign("mailto:peter.mcgibney@gmail.com");
